@@ -56,4 +56,4 @@ void PrintArray(string[] stringArr){
 }   
 
 
-PrintArray(СheckArray(stringArr, СheckLengthArray(stringArr)));
+PrintArray(СheckArray(stringArr, СheckLengthArray(stringArr))); 
