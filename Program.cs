@@ -42,6 +42,18 @@ string[] СheckArray(string[] stringArr, int arrLength)
     return arr_temp;
 }
 
+void PrintArray(string[] stringArr){
+    string result = "";
+    for(int i = 0; i<stringArr.Length; i++){
+        if(result == ""){
+            result = stringArr[i];
+        } else {
+            result += ", "+stringArr[i];
+        }
+    }
+    result = "["+result+"]";
+    Console.WriteLine(result);
+}   
 
 
-Console.WriteLine(СheckArray(stringArr, СheckLengthArray(stringArr)));
+PrintArray(СheckArray(stringArr, СheckLengthArray(stringArr)));
