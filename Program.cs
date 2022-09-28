@@ -19,7 +19,6 @@ if(!valid){
 int СheckLengthArray(string[] stringArr)
 {   
     int arrLength = 0;
-    Console.WriteLine(stringArr[0].Length<=3);
     for(int i=0; i<stringArr.Length; i++){
         if(stringArr[i].Length<=3){
             arrLength++;
@@ -27,4 +26,22 @@ int СheckLengthArray(string[] stringArr)
     }
     return arrLength;
 }
-Console.WriteLine(СheckLengthArray(stringArr));
+
+
+
+string[] СheckArray(string[] stringArr, int arrLength)
+{   
+    string[] arr_temp = new string[arrLength];
+    int arr_i = 0;
+    for(int i=0; i<stringArr.Length; i++){
+        if(stringArr[i].Length<=3){
+            arr_temp[arr_i] = stringArr[i];
+            arr_i++;
+        }
+    }
+    return arr_temp;
+}
+
+
+
+Console.WriteLine(СheckArray(stringArr, СheckLengthArray(stringArr)));
