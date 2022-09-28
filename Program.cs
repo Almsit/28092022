@@ -15,3 +15,16 @@ bool valid =  Valid(stringArr);
 if(!valid){
     return;
 }
+
+int СheckLengthArray(string[] stringArr)
+{   
+    int arrLength = 0;
+    Console.WriteLine(stringArr[0].Length<=3);
+    for(int i=0; i<stringArr.Length; i++){
+        if(stringArr[i].Length<=3){
+            arrLength++;
+        }
+    }
+    return arrLength;
+}
+Console.WriteLine(СheckLengthArray(stringArr));
